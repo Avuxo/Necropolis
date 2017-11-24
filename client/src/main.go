@@ -1,8 +1,9 @@
 package main
 
 import (
-	"net/http"
+	"flag"
 	"os"
+	"net/http"
 	"io/ioutil"
 	"log"
 )
@@ -70,8 +71,19 @@ func installPkg(pkgName string, addToOsiris bool){
 }
 
 func main(){
+	// command line flags
+	pkgFlag := flag.String("install", "", "The package you wish to install")
+	reviveFlag := flag.Bool("revive", true, "Install the packages for the program from the osiris file")
+	flag.Parse()
 	setupProject() // create the packages dir and config project
-	installPkg(os.Args[1], true)
-	
 
+	if *pkgFlag != ""{ // check if the install flag was set
+		installPkg(*pkgFlag, true)
+	}
+
+	if *reviveFlag{
+		readOsirisFile()
+	}
+	
+	_ = pkgFlag
 }

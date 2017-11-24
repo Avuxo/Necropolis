@@ -11,9 +11,9 @@ The two primary functions of Necropolis are:
 * Providing a way to get all the necessary packages for a given project.
 
 
-To install a new package into a given project, run `$ necro install <package_name>`. `$ necro install` will create a `*.osiris` file if it does not already exist.
+To install a new package into a given project, run `$ necro install <package_name>`. `$ necro install` will create a `osiris` file if it does not already exist.
 
-To install the dependencies for an existing project, run `$ necro revive`. This will download all of the dependencies listed in the `*.osiris` file.
+To install the dependencies for an existing project, run `$ necro revive`. This will download all of the dependencies listed in the `osiris` file.
 
 
 After a project has been setup, use `$ necro build` to build the COBOL project.
@@ -28,5 +28,5 @@ cobcurses
 
 The above Osiris file would install COBWEB (a web framework) and cobcurses (a curses library for COBOL).
 
-Each Necropolis project should have an Osiris file (`*.osiris`).
+Each Necropolis project should have an Osiris file (`osiris`).
 

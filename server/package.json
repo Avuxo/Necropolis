@@ -1,0 +1,22 @@
+{
+  "name": "necropolis-server",
+  "version": "1.0.0",
+  "description": "the server for the Necropolis COBOL package manager",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avuxo/necropolis.git"
+  },
+  "author": "Ben",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/avuxo/necropolis/issues"
+  },
+  "homepage": "https://github.com/avuxo/necropolis#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

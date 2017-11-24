@@ -16,7 +16,7 @@ To install a new package into a given project, run `$ necro install <package_nam
 To install the dependencies for an existing project, run `$ necro revive`. This will download all of the dependencies listed in the `*.osiris` file.
 
 
-After a project has been run, use `$ necro build` to build the COBOL project.
+After a project has been setup, use `$ necro build` to build the COBOL project.
 
 #### Osiris
 

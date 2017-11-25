@@ -1,5 +1,7 @@
 # Necropolis
 
+![Necropolis logo](necropolis-logo.png)
+
 ## Necropolis is a package manager for COBOL
 
 COBOL is mostly dead. However, there was a time when it was alive and well, and due to this there is a plethora of libraries available for it. Necropolis (a city of the dead) is a package manager to help with the installation and management of COBOL libraries.

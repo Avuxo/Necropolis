@@ -13,9 +13,9 @@ The two primary functions of Necropolis are:
 * Providing a way to get all the necessary packages for a given project.
 
 
-To install a new package into a given project, run `$ necro install <package_name>`. `$ necro install` will create a `osiris` file if it does not already exist.
+To install a new package into a given project, run `$ necro -install <package_name>`. `$ necro install` will create a `osiris` file if it does not already exist.
 
-To install the dependencies for an existing project, run `$ necro revive`. This will download all of the dependencies listed in the `osiris` file.
+To install the dependencies for an existing project, run `$ necro -revive`. This will download all of the dependencies listed in the `osiris` file.
 
 
 After a project has been setup, use `$ necro build` to build the COBOL project.
@@ -32,3 +32,6 @@ The above Osiris file would install COBWEB (a web framework) and cobcurses (a cu
 
 Each Necropolis project should have an Osiris file (`osiris`).
 
+Each package is enclosed in a `*.tomb` file. This simply appends to the end of the file, it does not replace any contents or change the headers.
+
+This means that using Necropolis is not necessarily safe. There might be binary packages with malicious content. However, this is no different from any other binary package manager without a vetting process. If someone actually decides to file a malcious package for some reason, place an issue with the title of the package and it will be removed if it is found to be malicious.

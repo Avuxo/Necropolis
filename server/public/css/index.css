@@ -1,0 +1,31 @@
+/*font imports*/
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+
+body{
+    margin: 0 auto;
+    max-width: 55em;
+
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #444;
+
+}
+
+a{
+    text-decoration: none;
+    color: #139;
+}
+
+h1{
+    font-size: 40px;
+}
+
+#main-logo{
+    display: block;
+    margin: auto;
+    width: 230px;
+    height: 200px;
+
+}
